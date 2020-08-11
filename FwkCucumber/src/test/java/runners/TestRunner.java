@@ -6,9 +6,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./src/test/resources/features",
+		features="./src/test/features",
 		glue= {"stepsDefinitions"},
-		tags= {"@Prueba"}, // Indicar el tags de los escenarios a ejecutar
+		tags= {"@SeguroAuto"}, // Indicar el tags de los escenarios a ejecutar
 		plugin= {"pretty","html:target/reportesCucumber"}
 		)
 
