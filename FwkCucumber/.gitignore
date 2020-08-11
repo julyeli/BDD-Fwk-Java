@@ -1,1 +1,58 @@
+
+# Creado por Giuliana Siles
+# 
+
+### Java ###
+# archivos class excluidos 
+*.class
+
+# Archivos Log
+*.log
+
+# BlueJ 
+*.ctxt
+
+# Otros excluidos
+.mtj.tmp/
+
+# Arhcivos Package del fwk #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# error log 
+hs_err_pid*
+
+### Windows ###
+# Windows archivos thumbnail cache
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump 
+*.stackdump
+
+# Archivos config
+[Dd]esktop.ini
+
+# Papelera usada en archivos compartidos
+$RECYCLE.BIN/
+
+# Archivos de instalacion
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# metadata
+/.metadata/
 /target/
