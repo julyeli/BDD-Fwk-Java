@@ -108,7 +108,7 @@ public class ExpertaSteps {
 		String mensaje = "El mensaje esperado es. '"+resultadoEsperado+"', se obtuvo el mensaje: '"+auto.verifica_EnvioExitoso()+"'.";
 		System.out.println(mensaje);
 	    Assert.assertEquals(mensaje,auto.verifica_EnvioExitoso(), resultadoEsperado);
-	    driver.quit();
+	    driver.close();;
 	}
 	
 	@When("^selecciono en el dropdwon \"([^\"]*)\" la opción \"([^\"]*)\", en la pantalla Accidentes Personales$")
@@ -166,6 +166,18 @@ public class ExpertaSteps {
 	public void hago_clic_en_el_boton_Cotiza_en_la_pantalla_Accidentes_Personales() throws Throwable {
 		System.out.println("Hace clic en el botón Cotizá, en la pantalla Accidentes Personales.");
 	    accPers.cliquea_BotonCotiza();
+	}
+	
+	@Then("^se visualiza el precio Recomendado, en la pantalla Accidentes Personales$")
+	public void se_visualiza_precio_Recomendado_en_pantalla_Accidentes_Personales() throws Throwable {
+		System.out.println("Verifica la cotización Recomendada.");
+		Thread.sleep(3500);
+		if (Integer.parseInt(accPers.obtiene_PrecioRecomendado())>0) {
+	    	System.out.println("Precio obtenido: "+accPers.obtiene_PrecioRecomendado()+".");
+	    }else{
+	    	System.out.println("Error en el proceso. Verificar. ");
+	    }
+	    driver.close();
 	}
 	
 }
