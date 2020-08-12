@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="./src/test/features",
+		features="./src/test/resources/features",
 		glue= {"stepsDefinitions"},
 		tags= {"@Regresion"}, // Indicar el tags de los escenarios a ejecutar
 		plugin= {"pretty","html:target/reportesCucumber"}
