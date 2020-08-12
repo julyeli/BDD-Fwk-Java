@@ -37,6 +37,10 @@ public class AccidentesPersPage {
 	private WebElement tbxTelefono;
 	@FindBy(how=How.ID,using="contratar-ap")
 	private WebElement btnCotiza;
+	//@FindBy(how=How.XPATH,using="//div[contains(class,'pink')]//p[@class='total']/b[2]")
+	@FindBy(how=How.XPATH,using="//div[@class='col-md-4 cobertura pink']/form/div[2]/div/p[2]/b[2]")
+	private WebElement lblPrecio;
+	
 	
 	// Definición de las acciones sobre los objectos
 	public void selecciona_Actividad(String actividad) {
@@ -77,6 +81,9 @@ public class AccidentesPersPage {
 	}
 	public void cliquea_BotonCotiza() {
 		btnCotiza.click();
+	}
+	public String obtiene_PrecioRecomendado() {
+		return lblPrecio.getText();
 	}
 	
 }
