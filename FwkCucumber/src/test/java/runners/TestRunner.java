@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="./src/test/features",
 		glue= {"stepsDefinitions"},
-		tags= {"@SeguroAuto"}, // Indicar el tags de los escenarios a ejecutar
+		tags= {"@Regresion"}, // Indicar el tags de los escenarios a ejecutar
 		plugin= {"pretty","html:target/reportesCucumber"}
 		)
 
