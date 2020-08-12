@@ -1,7 +1,7 @@
 Feature: Se accede a la pagina principal y se verifica contacto por seguro de auto
 
-	@AccidentePersonales
-	Scenario: Completar datos validos para contacto para seguro auto
+	@AccidentePersonales @Regresion
+	Scenario: Completar datos validos para cotizar seguro por accidente personal
 		Given accedo a la página Experta Seguros
 		And hago clic en el botón Lupa, en la pantalla Experta
 		And ingreso en el campo "Buscar" el valor "Accidentes Personales", en la pantalla Experta
@@ -15,7 +15,6 @@ Feature: Se accede a la pagina principal y se verifica contacto por seguro de au
 		And ingreso en el campo "Prefijo" el valor "11", en la pantalla Accidentes Personales
 		And ingreso en el campo "Telefono" el valor "12345678", en la pantalla Accidentes Personales
 		And ingreso en el campo "Fecha Desde" el valor "15/08/2020", en la pantalla Accidentes Personales
-		#And ingreso en el campo "Fecha Hasta" el valor "12345678", en la pantalla Accidentes Personales
 		When hago clic en el botón Cotiza, en la pantalla Accidentes Personales
-		
+		Then se visualiza el precio Recomendado, en la pantalla Accidentes Personales
 		

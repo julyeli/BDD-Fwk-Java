@@ -1,6 +1,6 @@
 Feature: Se accede a la pagina principal y se verifica contacto por seguro de auto
 
-	@SeguroAuto
+	@SeguroAuto @Regresion
 	Scenario: Completar datos validos para contacto para seguro auto
 		Given accedo a la página Experta Seguros
 		And hago clic en el menú Seguros, en la pantalla Experta
