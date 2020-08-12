@@ -28,7 +28,7 @@ Proyecto de Automatización
 
 Contiene la clase ejecutora. En el se usa la opción "tags"
  como filtro para las pruebas que se ejecutan, 
- por ejemplo "tags={@Regresion}"
+ por ejemplo "tags={@Regresion}". Para ejecutarlo, se corre como "JUnit Test". 
 
 
 ## /test/resources/features ##
@@ -48,14 +48,14 @@ Aquí se colocan los localizadores de los elementos con su clave:valor, usando P
 
 ## /target/reportesCucumber ##
 
-Aquí se guarda un reporte en html de la ultima ejecución.
+Aquí se guarda un reporte en html de la última ejecución.
 
 
 # Casos de prueba seleccionados para la verificación del sitio #
 
 ### Contacto por Seguro de Automovil ###
 
-Se selecciono este caso porque cuenta con un Captcha, y se realizaron los siguientes pasos
+Se selecciono este caso porque cuenta con un Captcha, y se realizaron los siguientes pasos:
 * Acceso al sitio
 * Seleccion de menú y opción
 * Ingreso de datos en input
@@ -63,10 +63,10 @@ Se selecciono este caso porque cuenta con un Captcha, y se realizaron los siguie
 
 ### Cotización de Seguro por Accidente Personal ###
 
-Se selecciono este caso por los diferentes campos que contiene para interactuar, y se realizaron los siguiente pasos
+Se selecciono este caso por los diferentes campos que contiene para interactuar, y se realizaron los siguiente pasos:
 * Acceso al sitio
 * Buscar la opción por Lupa
-* Navager a la opcion seleccionada
+* Navegar a la opción seleccionada
 * Completar campos dropdown, input, fecha y Cotizar
 * Verificar precio recomendado
 
