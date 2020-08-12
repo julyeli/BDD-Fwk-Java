@@ -26,8 +26,8 @@ Proyecto de Automatización
 
 ## /test/java/runners ##
 
-Contiene la clase ejecutora. En el se indica se usa la opción "tags"
- como filtro para los  test que se ejecutan los tests 
+Contiene la clase ejecutora. En el se usa la opción "tags"
+ como filtro para las pruebas que se ejecutan, 
  por ejemplo "tags={@Regresion}"
 
 
